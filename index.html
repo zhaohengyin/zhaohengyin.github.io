@@ -13,9 +13,12 @@
             -o-background-size: cover;
             background-size: cover;
         }
+        <!-- body {
+            font-family: Helvetica, sans-serif
+        } -->
 
         body {
-            font-family: 'Fira Sans Mono';
+            font-family: Helvetica, sans-serif
         }
 
         .centered {
@@ -42,7 +45,12 @@
             min-width: 1000px;
             max-width: 1200px;
             width: 70%; 
-            padding-bottom: 400px;
+            padding-bottom: 0px;
+        }
+        .responsive {
+            max-width: 70%;
+            height: auto;
+            float: right
         }
 
         .image-txt-container {
@@ -60,6 +68,7 @@
             display: flex;
             align-items: left;
             flex-direction: column;
+            width: 1000px;
         }
 
         .subtitle{margin-top:30px;color:#567f67}
@@ -117,6 +126,22 @@
         .pub-conf{font-size: 17px; font-weight:100; margin:0px}
         emph {color:#406588;}
         authpos {font-size: 17px; font-weight:700;}
+
+        .footer{ 
+            position: fixed;     
+            text-align: center;    
+            bottom: 10px; 
+            width: 100%;
+        }  
+
+        #copyright {
+    padding-top: 500px;
+	float: left;
+	padding-bottom: 0px;
+	text-align: center;
+	bottom: 50px;
+	width: 100%;
+}
     </style>
 <body>
 
@@ -131,7 +156,7 @@
             </div>
             
             <div style="text-align:right; margin-left: auto; 
-            margin-right: 20px; margin-top: 100px"><img style="float: right" src="./imgs/me.JPG" width="350" alt="My Image" /></div>
+            margin-right: 20px; margin-top: 100px"><img style="float: right" src="./imgs/me.JPG" class="responsive" alt="My Image" /></div>
         </div>
         <div class="main-bio-container">
             <h5 class="generic-subtitle">Biography</h5>
@@ -144,20 +169,19 @@
         <div class="main-research-container">
             <h5 class="generic-subtitle">Research</h5>
             <p> I am developing novel algorithms for computational sensorimotor learning. In particular, I focus on imitation learning 
-                and reinforcement learning. Up to now, I have designed novel imitation learning algorithms that can leverage cross domain expert data (ICRA'22), 
+                and reinforcement learning. I have proposed imitation learning algorithms that can leverage cross domain expert data (ICRA'22), 
                 learn more sample efficiently (NeurIPS'22), and generalize better with relational bias (ICLR'23 under review). 
             </p>
         </div>
         
         <div class="main-publication-container">
             <h5 class="generic-subtitle">Selected Publications</h5>
-            <p> My selected recent publications are as follows. The representative works are marked with ★.</p>
+            <p> My representative works are marked with ★.</p>
             
             <div class="row">
 
                 <div class="pub-box">
-                    <h5 class="pub-title">★ Structural Generalization of Visual Imitation Learning  <br>
-                        with Position-Invariant Regularization</h5>
+                    <h5 class="pub-title">★ Structural Generalization of Visual Imitation Learning with Position-Invariant Regularization</h5>
                     <h6 class="pub-authors"> <authpos>Zhao-Heng Yin</authpos>, Yang Gao, Qifeng Chen </h6>
                     <h6 class="pub-conf"> ICLR 2023 Under Review </h6>
                 </div>
@@ -208,11 +232,13 @@
                     <h6 class="pub-conf"> arXiv 2020 </h6>
                 </div>
             </div>
-
+           
         </div>
-
+    <div id="copyright">
+        Copyright 2022 &copy; Zhao-Heng Yin
     </div>
-
+    </div>
+    
 </div>
 
 
