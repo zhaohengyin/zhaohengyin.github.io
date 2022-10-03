@@ -135,19 +135,21 @@
         #main-pub-container .subtitle a.activated:focus,
         #main-pub-container .subtitle a.activated:hover {text-decoration:none;cursor:initial}
         
-        .row{margin:0; transition: 0.3s;padding-top:5px; padding-right:20px; padding-left:50px; padding-bottom:30px;}
-        .row:hover{margin:0; background-color:#04052b07;padding-top:5px; padding-right:40px; padding-left:40px; padding-bottom:30px;}
+        .row{margin:0; width: 100%; height:180px; float:left; transition: 0.3s;padding-top:5px; padding-left:20px; padding-bottom:30px;}
+        .row:hover{margin:0; width: 100%; float:left; background-color:#04052b07;padding-top:5px;  padding-left:0px; padding-bottom:30px;}
         coauthor {color:#06268f; font-size: 19px; line-height: 1.6; font-weight:100;}
-        coauthor a{color:#06268f; font-size: 19px; line-height: 1.6; font-weight:100; transition: 0.3s;}
-        coauthor a:hover{color:#165dc9; font-size: 19px; line-height: 1.6; font-weight:100; transition: 0.3s;}
+        coauthor a{color:#06268f; font-size: 19px; line-height: 1.6; font-weight:100; transition: 0.3s; padding-left: 2px; padding-right: 2px;}
+        coauthor a:hover{background-color:#4f87da; color:#FFFFFF; font-size: 19px; line-height: 1.6; font-weight:100; transition: 0.3s; padding-left: 2px; padding-right: 2px;}
         .pub-fig img{width:100%;margin:0 auto}
         .pub-info {width:100%;margin:0 auto}
-        .pub-box{width:100%;background:transparent; }
+        
+        .pub-img{width: 32%; height: 150px; float:left; background:transparent; padding-top: 30px; object-fit: contain;}
+        .pub-box{width: 65%; height: 100%; background:transparent; float:right;}
         .pub-title{color:#81096b; font-size: 20px; font-weight:100;margin-bottom:4px;}
-        .pub-title a{color:#7e106a; font-size: 20px; font-weight:100;margin-bottom:4px;transition: 0.3s;}
-        .pub-title a:hover {color:#f57c0a}
-        .pub-authors{font-size: 17px; font-weight:100; margin:0px}
-        .pub-conf{font-size: 17px; font-weight:100; margin:0px}
+        .pub-title a{color:#7e106a; font-size: 20px; font-weight:100;margin-bottom:4px;transition: 0.3s;padding-right: 5px;}
+        .pub-title a:hover {color:#f57c0a; padding-right: 5px;}
+        .pub-authors{font-size: 17px; font-weight:100; margin:0px; padding-right: 5px;}
+        .pub-conf{font-size: 17px; font-weight:100; margin:0px; padding-right: 5px;}
         emph {color:#406588;}
         authpos {font-size: 17px; font-weight:700;}
 
@@ -212,7 +214,7 @@
             <p> My representative works are marked with ★.</p>
             
             <div class="row">
-
+                <div class="pub-img"><img style="float: left;  min-height: 100%; min-width: 100%; " src="./imgs/point.png" class="responsive" alt="POINT" /></div>
                 <div class="pub-box">
                     <h5 class="pub-title"><a href="https://openreview.net/pdf?id=eMuXAIEYXh9">★ Structural Generalization of Visual Imitation Learning with Position-Invariant Regularization</a></h5>
                     <h6 class="pub-authors"> <authpos>Zhao-Heng Yin</authpos>, Yang Gao, Qifeng Chen </h6>
@@ -222,7 +224,7 @@
             
 
             <div class="row">
-
+                <div class="pub-img"><img style="float: left; min-width: 100%;  min-height: 100% " src="./imgs/ei.png" class="responsive" alt="EI" /></div>
                 <div class="pub-box">
                     <h5 class="pub-title"><a href="https://nips.cc/Conferences/2022/Schedule?showEvent=55141">★ Planning for Sample Efficient Imitation Learning</a></h5>
                     <h6 class="pub-authors"> <authpos>Zhao-Heng Yin</authpos>, Weirui Ye, Qifeng Chen, Yang Gao </h6>
@@ -231,7 +233,7 @@
             </div>
             
             <div class="row">
-
+                <div class="pub-img"><img style="float: left; min-width: 100%; min-height: 100%" src="./imgs/cdil.png" class="responsive" alt="CDIL" /></div>
                 <div class="pub-box">
                     <h5 class="pub-title"><a href="https://ieeexplore.ieee.org/document/9811668/">★ Cross Domain Robot Imitation with Invariant Representation </a></h5>
                     <h6 class="pub-authors"> <authpos>Zhao-Heng Yin</authpos>, Lingfeng Sun, Hengbo Ma, Masayoshi Tomizuka, Wu-Jun Li </h6>
@@ -240,7 +242,7 @@
             </div>
 
             <div class="row">
-
+                <div class="pub-img"><img style="float: left; min-width: 100%; min-height: 100%" src="./imgs/dexpc.png" class="responsive" alt="DEXPC" /></div>
                 <div class="pub-box">
                     <h5 class="pub-title"><a href="https://openreview.net/forum?id=tJE1Yyi8fUX"> Generalizable Point Cloud Policy Learning for Sim-to-Real Dexterous Manipulation </a> </h5>
                     <h6 class="pub-authors"> Yuzhe Qin*, Binghao Huang*, <authpos>Zhao-Heng Yin</authpos>, Hao Su, Xiaolong Wang </h6>
@@ -249,7 +251,7 @@
             </div>
 
             <div class="row">
-
+                <div class="pub-img"><img style="float: left;min-width: 100%;  min-height: 100%" src="./imgs/rgan.png" class="responsive" alt="RGAN" /></div>
                 <div class="pub-box">
                     <h5 class="pub-title"><a href="https://ieeexplore.ieee.org/document/9636266/">Diverse Critical Interaction Generation for Planning and Planner Evaluation</a></h5>
                     <h6 class="pub-authors"> <authpos>Zhao-Heng Yin*</authpos>, Lingfeng Sun*, Liting Sun, Masayoshi Tomizuka, Wei Zhan </h6>
@@ -258,7 +260,7 @@
             </div>
 
             <div class="row">
-
+                <div class="pub-img"><img style="float: left; min-width: 100%; min-height: 100%" src="./imgs/toma.png" class="responsive" alt="TOMA" /></div>
                 <div class="pub-box">
                     <h5 class="pub-title"><a href="https://arxiv.org/abs/2005.06061">TOMA: Topological Map Abstraction for Reinforcement Learning</a></h5>
                     <h6 class="pub-authors"> <authpos>Zhao-Heng Yin</authpos>, Wu-Jun Li </h6>
