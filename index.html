@@ -53,7 +53,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background-color:rgba(255, 255, 255, 0.95);
+            background-color:rgba(255, 255, 255, 0.92);
             min-height: 100px;
             min-width: 1000px;
             max-width: 1200px;
@@ -129,14 +129,28 @@
                                    margin-bottom:-40px;}
         .main-publication-container p{font-size: 19px;  line-height: 1.6; font-weight:100; }
 
+        
+        /* .select {
+            position: absolute;
+            right: -100px;
+            width: 100px;
+            height: 100px;
+            background: blue;
+            transition: 0.4s;
+        } */
+
 
         #main-pub-container .subtitle a {font-weight:400;font-size:18px}
         #main-pub-container .subtitle a.activated {color:#333333}
         #main-pub-container .subtitle a.activated:focus,
         #main-pub-container .subtitle a.activated:hover {text-decoration:none;cursor:initial}
         
-        .row{margin:0; width: 100%; height:220px; float:left; transition: 0.3s;padding-top:5px; padding-left:20px; padding-bottom:30px;}
-        .row:hover{margin:0; width: 100%; float:left; background-color:#04052b07;padding-top:5px;  padding-left:15px; padding-bottom:30px;}
+        .row{margin-bottom:10px; position: relative; overflow: hidden; width: 100%; height:220px; background-color:#ffffff; float:left; transition: 0.3s;padding-top:5px; padding-left:20px; padding-bottom:10px;}
+        .row:hover{margin-bottom:10px; width: 100%; position: relative; overflow: hidden; float:left; background-color:#ffffff;padding-top:5px;  padding-left:15px; padding-bottom:10px;}
+        /* .row:hover #slide {
+            transition: 0.4s;
+            right: -25px;
+        } */
         coauthor {color:#06268f; font-size: 19px; line-height: 1.6; font-weight:100;}
         coauthor a{color:#06268f; font-size: 19px; line-height: 1.6; font-weight:100; transition: 0.3s; padding-left: 2px; padding-right: 2px;}
         coauthor a:hover{background-color:#4f87da; color:#FFFFFF; font-size: 19px; line-height: 1.6; font-weight:100; transition: 0.3s; padding-left: 2px; padding-right: 2px;}
@@ -144,7 +158,7 @@
         .pub-info {width:100%;margin:0 auto}
         
         .pub-img{width: 32%; height: 150px; float:left; background:transparent; padding-top: 30px; object-fit: contain;}
-        .pub-box{width: 65%; height: 100%; background:transparent; float:right;}
+        .pub-box{width: 60%; height: 100%; background:transparent; float:right; padding-right: 20px}
         .pub-title{color:#81096b; font-size: 20px; font-weight:100;margin-bottom:4px;}
         .pub-title a{color:#7e106a; font-size: 20px; font-weight:100;margin-bottom:4px;transition: 0.3s;padding-right: 5px;}
         .pub-title a:hover {color:#f57c0a; padding-right: 5px;}
@@ -239,6 +253,7 @@
                     <h6 class="pub-authors"> <authpos>Zhao-Heng Yin</authpos>, Lingfeng Sun, Hengbo Ma, Masayoshi Tomizuka, Wu-Jun Li </h6>
                     <h6 class="pub-conf"> ICRA 2022 </h6>
                 </div>
+                <!-- <img id="slide" style="min-height: 100%;" src="./imgs/anim/border.png" />  -->
             </div>
 
             <div class="row">
