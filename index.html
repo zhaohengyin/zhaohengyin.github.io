@@ -54,7 +54,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background: linear-gradient(#ffffffe3 30%, #ffffff20 60%);
+            background: linear-gradient(#ffffffe3 30%, #ffffff90 60%);
             /* background-color:rgba(255, 255, 255, 0.88); */
             min-height: 100px;
             min-width: 1000px;
@@ -91,7 +91,7 @@
             width: 1000px;
         }
 
-        .subtitle{margin-top:30px;color:#567f67}
+        .subtitle{margin-top:30px;color:#06268f}
         .icon-name-subtitle{padding-top:60px; margin:0; font-size: 33px; font-weight:400; color:#000000; text-align:left;}
         .icon-institute-subtitle{margin:0; font-size: 24px; font-weight:400; color:#483f9c; text-align:left;}
         .icon-email-subtitle{margin:0; font-size: 15px; font-weight:400; color:#565857; text-align:left;}
@@ -99,7 +99,7 @@
         .main-bio-container{margin:auto;padding: 0 0em;max-width:1080px;text-align:left;
             padding-top:30px;width:70%;max-width:1080px;font-size:1rem;line-height:1.4; margin-bottom:-40px;}
 
-        .generic-subtitle{color:#145694; font-size: 25px; font-weight:400;}
+        .generic-subtitle{color:#06268f; font-size: 25px; font-weight:400;}
         .main-bio-container p{font-size: 19px; line-height: 1.6; font-weight:100; }
         .main-research-container{margin:auto;
                                    padding:0 0em;
@@ -144,7 +144,7 @@
         #main-pub-container .subtitle a.activated:hover {text-decoration:none;cursor:initial}
         
         .row{margin-bottom:10px; position: relative; overflow: hidden; width: 100%; height:220px; background-color:#ffffff; float:left; transition: 0.3s;padding-top:5px; padding-left:20px; padding-bottom:10px;}
-        .row:hover{margin-bottom:10px; width: 100%; position: relative; overflow: hidden; float:left; background-color:#ffffff;padding-top:5px;  padding-left:15px; padding-bottom:10px;}
+        .row:hover{margin-bottom:10px; width: 100%; position: relative; overflow: hidden; float:left; background-color:#ffffff;padding-top:5px;  padding-left:20px; padding-bottom:10px;}
         /* .row:hover #slide {
             transition: 0.4s;
             right: -25px;
@@ -163,11 +163,22 @@
         
         .pub-img{width: 32%; height: 150px; float:left; background:transparent; padding-top: 30px; object-fit: contain;}
         .pub-box{width: 60%; height: 100%; background:transparent; float:right; padding-right: 20px}
-        .pub-title{color:#81096b; font-size: 20px; font-weight:100;margin-bottom:4px;}
-        .pub-title a{color:#7e106a; font-size: 20px; font-weight:100;margin-bottom:4px;transition: 0.3s; padding-right: 5px;}
-        .pub-title a:hover {color:rgb(226, 75, 19); padding-right: 5px;}
+        .pub-title{color:#06268f; font-size: 20px; font-weight:100;margin-bottom:4px;}
+        .pub-title a{color:#06268f; font-size: 20px; font-weight:100;margin-bottom:4px; padding-right: 5px;}
+        .pub-title a:hover {text-decoration: underline;
+                        text-decoration-color: rgb(250, 114, 64);
+                        -moz-text-decoration-color: rgb(250, 114, 64); 
+                        text-underline-offset: 6px;
+                        text-decoration-thickness: 3px; padding-right: 5px;}
         .pub-authors{font-size: 17px; font-weight:100; margin:0px; padding-right: 5px;}
         .pub-conf{font-size: 17px; font-weight:100; margin:0px; padding-right: 5px;}
+        .pub-conf a{color:#06268f; font-size: 17px; font-weight:100;}
+        .pub-conf a:hover{color:#06268f; text-decoration: underline;
+                        text-decoration-color: rgb(250, 114, 64);
+                        -moz-text-decoration-color: rgb(250, 114, 64); 
+                        text-underline-offset: 5px;
+                        text-decoration-thickness: 3px; font-size: 17px; font-weight:100;}
+        
         emph {color:#406588;}
         authpos {font-size: 17px; font-weight:700;}
 
@@ -179,14 +190,14 @@
         }  
 
         #copyright {
-            color:#ffffff;
+            color:#000000;
             padding-top: 1100px;
 	        float: left;
 	        padding-bottom: 5px;
 	        text-align: center;
 	        bottom: 50px;
-	        width: 100%;
-            font-size: 13px;
+	        width: 100%;font-weight:300;
+            font-size: 15px;
         }
     </style>
 <body>
