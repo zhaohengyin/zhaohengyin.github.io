@@ -8,16 +8,16 @@
     </head>
     <style>
   
-  @font-face {
+    @font-face {
             font-family: NotoSans;
             src: url("fonts/NotoSansTC-Regular.otf") format("opentype");
-        }
+    }
 
-@font-face {
-    font-family: NotoSans;
-    font-weight: bold;
-    src: url("fonts/NotoSansTC-Bold.otf") format("opentype");
-}
+    @font-face {
+        font-family: NotoSans;
+        font-weight: bold;
+        src: url("fonts/NotoSansTC-Bold.otf") format("opentype");
+    }
 
 
         html { 
@@ -54,12 +54,12 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background: linear-gradient(#ffffffe3 30%, #ffffff90 60%);
+            background: linear-gradient(#ffffffe3 30%, #ffffffd0 60%);
             /* background-color:rgba(255, 255, 255, 0.88); */
             min-height: 100px;
-            min-width: 1000px;
-            max-width: 1200px;
-            width: 70%; 
+            min-width: 700px;
+            max-width: 750px;
+            width: 100%; 
             padding-bottom: 0px;
         }
         .responsive {
@@ -75,16 +75,16 @@
             width: 100%; 
 
             margin:auto;padding: 0 0em;max-width:1080px;text-align:left;
-            padding-top:30px;width:70%;max-width:1080px;font-size:1rem;line-height:1.4
+            width:70%;max-width:1080px;font-size:1rem;line-height:1.4
 
         }
 
-        p a{color:#06268f; font-size: 19px; font-weight:100;}
+        p a{color:#06268f; font-size: 12px; font-weight:100;}
         p a:hover{color:#06268f; text-decoration: underline;
                         text-decoration-color: rgb(250, 114, 64);
                         -moz-text-decoration-color: rgb(250, 114, 64); 
-                        text-underline-offset: 5px;
-                        text-decoration-thickness: 3px; font-size: 19px; font-weight:100;}
+                        text-underline-offset: 3px;
+                        text-decoration-thickness: 2px; font-size: 12px; font-weight:100;}
 
         a:hover, a:visited, a:link, a:active
         {
@@ -98,97 +98,84 @@
             width: 1000px;
         }
 
-        .subtitle{margin-top:30px;color:#06268f}
-        .icon-name-subtitle{padding-top:60px; margin:0; font-size: 33px; font-weight:400; color:#000000; text-align:left;}
-        .icon-institute-subtitle{margin:0; font-size: 24px; font-weight:400; color:#483f9c; text-align:left;}
-        .icon-email-subtitle{margin:0; font-size: 15px; font-weight:400; color:#565857; text-align:left;}
-        /* .generic-subtitle { height:10px; font-size:1rem; font-weight:400;} */
-        .main-bio-container{margin:auto;padding: 0 0em;max-width:1080px;text-align:left;
-            padding-top:30px;width:70%;max-width:1080px;font-size:1rem;line-height:1.4; margin-bottom:-40px;}
 
-        .generic-subtitle{color:#06268f; font-size: 25px; font-weight:400;}
-        .main-bio-container p{font-size: 19px; line-height: 1.6; font-weight:100; }
+        .icon-name-subtitle{padding-top:60px; margin:0; font-size: 20px; font-weight:400; color:#000000; text-align:left;}
+        .icon-institute-subtitle{margin:0; font-size: 16px; font-weight:400; color:#483f9c; text-align:left;}
+        .icon-email-subtitle{margin:0; font-size: 12px; font-weight:400; color:#565857; text-align:left;}
+      
+        
+        /* Section Title */
+        .generic-subtitle{color:#0b2062; font-size: 16px; font-weight:400;margin-top:20px; margin-bottom:0px;}
+        
+        /* Biography Part */
+        .main-bio-container{margin:auto;padding: 0 0em;max-width:1080px;text-align:left; width:70%;max-width:1080px;font-size:1rem;line-height:1.4; }
+        .main-bio-container p{font-size: 12px; line-height: 1.5; font-weight:100; }
+
+        /* Research Part */
         .main-research-container{margin:auto;
                                    padding:0 0em;
                                    max-width:1080px;
                                    text-align:left;
-                                   padding-top:30px;
                                    width:70%;
                                    max-width:1080px;
-                                   font-size: 19px;  
-                                   line-height: 1.6; 
-                                   font-weight:100;
-                                   margin-bottom:-40px;}
-        .main-research-container p{font-size: 19px;  line-height: 1.6; font-weight:100; }
+                                   font-size: 12px;  
+                                   line-height: 1.5; 
+                                   font-weight:100;}
+        .main-research-container p{font-size: 12px;  line-height: 1.5; font-weight:100; }
+
+            
+        /* Publication Boxes */
 
         .main-publication-container{margin:auto;
                                    padding:0 0em;
                                    max-width:1080px;
                                    text-align:left;
-                                   padding-top:30px;
                                    width:70%;
                                    max-width:1080px;
-                                   font-size: 19px;  
-                                   line-height: 1.6; 
+                                   font-size: 12px;  
+                                   line-height: 1.5; 
                                    font-weight:100;
                                    margin-bottom:-40px;}
-        .main-publication-container p{font-size: 19px;  line-height: 1.6; font-weight:100; }
+        .main-publication-container p{font-size: 12px;  line-height: 1.6; font-weight:100; }
 
-        
-        /* .select {
-            position: absolute;
-            right: -100px;
-            width: 100px;
-            height: 100px;
-            background: blue;
-            transition: 0.4s;
-        } */
-
-
-        #main-pub-container .subtitle a {font-weight:400;font-size:18px}
-        #main-pub-container .subtitle a.activated {color:#333333}
-        #main-pub-container .subtitle a.activated:focus,
-        #main-pub-container .subtitle a.activated:hover {text-decoration:none;cursor:initial}
-        
-        .row{margin-bottom:10px; position: relative; overflow: hidden; width: 100%; height:220px; background-color:#ffffff; float:left; transition: 0.3s;padding-top:5px; padding-left:20px; padding-bottom:10px;}
-        .row:hover{margin-bottom:10px; width: 100%; position: relative; overflow: hidden; float:left; background-color:#ffffff;padding-top:5px;  padding-left:20px; padding-bottom:10px;}
-        /* .row:hover #slide {
-            transition: 0.4s;
-            right: -25px;
-        } */
-        coauthor {color:#06268f; font-size: 19px; line-height: 1.6; font-weight:100;}
-        coauthor a{color:#06268f; font-size: 19px; line-height: 1.6; font-weight:100; padding-left: 2px; padding-right: 2px;}
+        /* Each Publication Entry */
+        .row{margin-bottom:10px; position: relative; overflow: hidden; width: 100%; height:140px; background-color:#ffffff; float:left; transition: 0.3s;}
+        /* .row:hover{margin-bottom:10px; width: 100%; position: relative; overflow: hidden; float:left; background-color:#ffffff;padding-top:5px;} */
+ 
+        coauthor {color:#06268f; font-size: 12px; line-height: 1.3; font-weight:100;}
+        coauthor a{color:#06268f; font-size: 12px; line-height: 1.3; font-weight:100; padding-left: 2px; padding-right: 2px;}
         coauthor a:hover{text-decoration: underline;
                         text-decoration-color: rgb(250, 114, 64);
                         -moz-text-decoration-color: rgb(250, 114, 64); 
-                        text-underline-offset: 6px;
-                        text-decoration-thickness: 3px; 
+                        text-underline-offset: 4px;
+                        text-decoration-thickness: 2px; 
                         color:#06268f; 
-                        font-size: 19px; line-height: 1.6; font-weight:100; padding-left: 2px; padding-right: 2px;}
+                        font-size: 12px; line-height: 1.3; font-weight:100; padding-left: 2px; padding-right: 2px;}
+
         .pub-fig img{width:100%;margin:0 auto}
         .pub-info {width:100%;margin:0 auto}
         
-        .pub-img{width: 32%; height: 150px; float:left; background:transparent; padding-top: 30px; object-fit: contain;}
-        .pub-box{width: 60%; height: 100%; background:transparent; float:right; padding-right: 20px}
-        .pub-title{color:#06268f; font-size: 20px; font-weight:100;margin-bottom:4px;}
-        .pub-title a{color:#06268f; font-size: 20px; font-weight:100;margin-bottom:4px; padding-right: 5px;}
+        .pub-img{width: 32%; height: 150px; float:left; background:transparent; object-fit: contain;}
+        .pub-box{width: 58%; height: 100%; background:transparent; float:right; margin-left:4px; margin-right: 10px;}
+        .pub-title{color:#06268f; font-size: 12.5px; font-weight:100;margin-bottom:4px;}
+        .pub-title a{color:#06268f; font-size: 12.5px; font-weight:100;margin-bottom:4px; padding-right: 5px;}
         .pub-title a:hover {text-decoration: underline;
                         text-decoration-color: rgb(250, 114, 64);
                         -moz-text-decoration-color: rgb(250, 114, 64); 
-                        text-underline-offset: 6px;
-                        text-decoration-thickness: 3px; padding-right: 5px;}
-        .pub-authors{font-size: 17px; font-weight:100; margin:0px; padding-right: 5px;}
-        .pub-conf{font-size: 17px; font-weight:100; margin:0px; padding-right: 5px;}
-        .pub-misc{color: #ce7420; font-size: 17px; font-weight:100; margin:0px; padding-right: 5px;}
-        .pub-conf a{color:#06268f; font-size: 17px; font-weight:100;}
+                        text-underline-offset: 4px;
+                        text-decoration-thickness: 2px; padding-right: 5px;}
+        .pub-authors{font-size: 12px; font-weight:100; margin:0px; padding-right: 5px;}
+        .pub-conf{font-size: 12px; font-weight:100; margin:0px; padding-right: 5px;}
+        .pub-misc{color: #ce7420; font-size: 12px; font-weight:100; margin:0px; padding-right: 5px;}
+        .pub-conf a{color:#06268f; font-size: 12px; font-weight:100;}
         .pub-conf a:hover{color:#06268f; text-decoration: underline;
                         text-decoration-color: rgb(250, 114, 64);
                         -moz-text-decoration-color: rgb(250, 114, 64); 
-                        text-underline-offset: 5px;
-                        text-decoration-thickness: 3px; font-size: 17px; font-weight:100;}
+                        text-underline-offset: 4px;
+                        text-decoration-thickness: 2px; font-size: 12px; font-weight:100;}
         
         emph {color:#406588;}
-        authpos {font-size: 17px; font-weight:700;}
+        authpos {font-size: 12px; font-weight:700;}
 
         .footer{ 
             position: fixed;     
@@ -205,7 +192,7 @@
 	        text-align: center;
 	        bottom: 50px;
 	        width: 100%;font-weight:300;
-            font-size: 15px;
+            font-size: 12px;
         }
     </style>
 <body>
@@ -224,7 +211,7 @@
             margin-right: 20px; margin-top: 100px"><img style="float: right" src="./imgs/me.JPG" class="responsive" alt="My Image" /></div>
         </div>
         <div class="main-bio-container">
-            <h5 class="generic-subtitle" style="margin-bottom:0px">Biography</h5>
+            <h5 class="generic-subtitle">Biography</h5>
             <p> I am an M.Phil. student at the <emph>Hong Kong University of Science and Technology (HKUST)</emph>, advised by <coauthor><a href="https://cqf.io/">Prof. Qifeng Chen</a></coauthor>. 
                 I conduct research on reinforcement learning, imitation learning, and robotics. During my M.Phil., I also work closely with <coauthor><a href="https://yang-gao.weebly.com/">Prof. Yang Gao</a></coauthor> at <emph>Tsinghua University IIIS</emph> and <coauthor><a href="https://xiaolonw.github.io/">Prof. Xiaolong Wang</a></coauthor> at <emph>UCSD</emph>. 
             </p>
@@ -238,15 +225,13 @@
                 Here is my <a href="./res/pdf/cv.pdf">CV</a>.
             </p>
  
- 
-            <br>
             <p style="color:rgb(231, 39, 39)"> [September 2022: New] I am applying for a Ph.D. position on Robot Learning starting from Fall 2023. Shoot me an E-mail if you are interested.
             </p>
 
         </div>
         
         <div class="main-research-container">
-            <h5 class="generic-subtitle" style="margin-bottom:0px">Research</h5>
+            <h5 class="generic-subtitle">Research</h5>
             <p> I am developing novel algorithms for robot learning. In particular, I am working on imitation learning 
                 and reinforcement learning. I have proposed imitation learning algorithms that can leverage cross domain expert data (ICRA'22), 
                 learn more sample efficiently with MCTS planning (NeurIPS'22), and generalize better with relational inductive bias (CoRL'22-W). I also study the application of these algorithms on real robot platforms. 
@@ -254,11 +239,11 @@
         </div>
         
         <div class="main-publication-container">
-            <h5 class="generic-subtitle" style="margin-bottom:0px">Selected Publications</h5>
+            <h5 class="generic-subtitle">Selected Publications</h5>
             <p> My representative works are marked with ★.</p>
             
             <div class="row">
-                <div class="pub-img"><img style="float: left;  min-height: 100%; min-width: 100%; " src="./imgs/point.png" class="responsive" alt="POINT" /></div>
+                <img style="float: left;  min-height: 120px; max-height: 120px; min-width: 180px; max-width: 180px; padding-top: 10px; padding-left: 10px; padding-right: 10px" src="./imgs/point.png" class="responsive" alt="POINT" />
                 <div class="pub-box">
                     <h5 class="pub-title"><a href="https://openreview.net/pdf?id=eMuXAIEYXh9">★ Spatial Generalization of Visual Imitation Learning with Position-Invariant Regularization</a></h5>
                     <h6 class="pub-authors"> <authpos>Zhao-Heng Yin</authpos>, Yang Gao, Qifeng Chen </h6>
@@ -269,7 +254,7 @@
             
 
             <div class="row">
-                <div class="pub-img"><img style="float: left; min-width: 100%;  min-height: 100% " src="./imgs/ei.png" class="responsive" alt="EI" /></div>
+               <img style="float: left;  min-height: 120px; max-height: 120px; min-width: 180px; max-width: 180px; padding-top: 10px; padding-left: 10px; padding-right: 10px" src="./imgs/ei.png" class="responsive" alt="EI" />
                 <div class="pub-box">
                     <h5 class="pub-title"><a href="https://nips.cc/Conferences/2022/Schedule?showEvent=55141">★ Planning for Sample Efficient Imitation Learning</a></h5>
                     <h6 class="pub-authors"> <authpos>Zhao-Heng Yin</authpos>, Weirui Ye, Qifeng Chen, Yang Gao </h6>
@@ -279,7 +264,7 @@
             </div>
             
             <div class="row">
-                <div class="pub-img"><img style="float: left; min-width: 100%; min-height: 100%" src="./imgs/cdil.png" class="responsive" alt="CDIL" /></div>
+                <img style="float: left;  min-height: 120px; max-height: 120px; min-width: 180px; max-width: 180px; padding-top: 10px; padding-left: 10px; padding-right: 10px" src="./imgs/cdil.png" class="responsive" alt="CDIL" />
                 <div class="pub-box">
                     <h5 class="pub-title"><a href="https://ieeexplore.ieee.org/document/9811668/">★ Cross Domain Robot Imitation with Invariant Representation </a></h5>
                     <h6 class="pub-authors"> <authpos>Zhao-Heng Yin</authpos>, Lingfeng Sun, Hengbo Ma, Masayoshi Tomizuka, Wu-Jun Li </h6>
@@ -289,7 +274,7 @@
             </div>
 
             <div class="row">
-                <div class="pub-img"><img style="float: left; min-width: 100%; min-height: 100%" src="./imgs/dexpc.png" class="responsive" alt="DEXPC" /></div>
+                <img style="float: left;  min-height: 120px; max-height: 120px; min-width: 180px; max-width: 180px; padding-top: 10px; padding-left: 10px; padding-right: 10px" src="./imgs/relocate.gif" class="responsive" alt="DEXPC" />
                 <div class="pub-box">
                     <h5 class="pub-title"><a href="https://openreview.net/forum?id=tJE1Yyi8fUX"> DexPoint: Generalizable Point Cloud Reinforcement Learning for Sim-to-Real Dexterous Manipulation </a> </h5>
                     <h6 class="pub-authors"> Yuzhe Qin*, Binghao Huang*, <authpos>Zhao-Heng Yin</authpos>, Hao Su, Xiaolong Wang </h6>
@@ -298,7 +283,7 @@
             </div>
 
             <div class="row">
-                <div class="pub-img"><img style="float: left;min-width: 100%;  min-height: 100%" src="./imgs/rgan.png" class="responsive" alt="RGAN" /></div>
+                <img style="float: left;  min-height: 120px; max-height: 120px; min-width: 180px; max-width: 180px; padding-top: 10px; padding-left: 10px; padding-right: 10px" src="./imgs/rgan.png" class="responsive" alt="RGAN" />
                 <div class="pub-box">
                     <h5 class="pub-title"><a href="https://ieeexplore.ieee.org/document/9636266/">Diverse Critical Interaction Generation for Planning and Planner Evaluation</a></h5>
                     <h6 class="pub-authors"> <authpos>Zhao-Heng Yin*</authpos>, Lingfeng Sun*, Liting Sun, Masayoshi Tomizuka, Wei Zhan </h6>
@@ -307,7 +292,7 @@
             </div>
 
             <div class="row">
-                <div class="pub-img"><img style="float: left; min-width: 100%; min-height: 100%" src="./imgs/toma.png" class="responsive" alt="TOMA" /></div>
+                <img style="float: left;  min-height: 120px; max-height: 120px; min-width: 180px; max-width: 180px; padding-top: 10px; padding-left: 10px; padding-right: 10px" src="./imgs/toma.png" class="responsive" alt="TOMA" />
                 <div class="pub-box">
                     <h5 class="pub-title"><a href="https://arxiv.org/abs/2005.06061">TOMA: Topological Map Abstraction for Reinforcement Learning</a></h5>
                     <h6 class="pub-authors"> <authpos>Zhao-Heng Yin</authpos>, Wu-Jun Li </h6>
