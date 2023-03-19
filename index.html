@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head> 
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />  -->
     <meta charset="utf-8"> 
         <title>Zhao-Heng Yin</title> 
         <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
@@ -21,12 +20,23 @@
 
 
         html { 
-            background: url(./imgs/la.jpg) no-repeat  fixed; 
+            background: url(./imgs/la_small.jpg) no-repeat  fixed; 
             filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";  
             -moz-background-size:100% 100%;  
             background-size:100% 100%;  
 
         }
+
+        @media screen and (min-device-width: 800px){
+            html { 
+                background: url(./imgs/la.jpg) no-repeat  fixed; 
+                filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";  
+                -moz-background-size:100% 100%;  
+                background-size:100% 100%;  
+    
+            }
+        }
+
         <!-- body {
             font-family: Helvetica, sans-serif
         } -->
@@ -240,7 +250,7 @@
             <h5 class="generic-subtitle">◤ Research</h5>
             <p> I am developing novel algorithms for robot learning. In particular, I am working on imitation learning 
                 and reinforcement learning. I have proposed imitation learning algorithms that can leverage cross domain expert data (ICRA'22), 
-                learn more sample efficiently with MCTS planning (NeurIPS'22), and generalize better with relational inductive bias (CoRL'22-W). I also study the application of these algorithms on real robots. 
+                learn more sample efficiently with MCTS planning (NeurIPS'22), and generalize better with relational inductive bias (CoRL'22-W). I also study the application of these algorithms on real robotics problem, such as dexterous manipulation. 
             </p>
         </div>
         
