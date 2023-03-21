@@ -4,6 +4,7 @@
     <meta charset="utf-8"> 
         <title>Zhao-Heng Yin</title> 
         <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <style>
   
@@ -36,6 +37,56 @@
     
             }
         }
+
+        .fa {
+            padding: 6px;
+            font-size: 10px;
+            width: 11px;
+            text-align: center;
+            text-decoration: none;
+          }
+          
+          /* Add a hover effect if you want */
+          .fa:hover {
+            opacity: 0.7;
+          }
+          
+          /* Set a specific color for each brand */
+          
+          /* Facebook */
+          .fa-facebook {
+            background: #3B5998;
+            color: white;
+          }
+          
+          /* Twitter */
+          .fa-twitter {
+            background: #55ACEE;
+            color: white;
+          }
+
+          .fa-github {
+            background: #113f60;
+            color: white;
+          }
+
+          
+          .btn {
+            background-color: rgb(31, 77, 122); /* Blue background */
+            border: none; /* Remove borders */
+            color: white; /* White text */
+            padding: 4px; /* Some padding */
+            font-size: 6px; /* Set a font size */
+            width: 5px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer; /* Mouse pointer on hover */
+          }
+          
+          /* Darker background on mouse-over */
+          .btn:hover {
+            background-color: RoyalBlue;
+          }
 
         <!-- body {
             font-family: Helvetica, sans-serif
@@ -212,17 +263,21 @@
 
 <div class="main">
     <div class="center-screen">
+        <br>
         <div class="image-txt-container">
             <div class="main-icon-container">
                 <p class="icon-name-subtitle">Alex Zhao-Heng Yin</p>
                 <p class="icon-institute-subtitle">HKUST Robotics Institute</p>
                 <p class="icon-email-subtitle">Kowloon, Hong Kong</p>
                 <p class="icon-email-subtitle">zyinag@connect.ust.hk</p>
-                
+                <br>
+                <span><a href="https://twitter.com/zhaohengyin" class="fa fa-twitter"></a> 
+                    <a href="https://github.com/zhaohengyin" class="fa fa-github"></a> 
+                </span>
             </div>
             
             <div style="text-align:right; margin-left: auto; 
-            margin-right: 20px; margin-top: 100px"><img style="float: right" src="./imgs/me.JPG" class="responsive" alt="My Image" /></div>
+            margin-right: 20px; margin-top: 70px"><img style="float: right" src="./imgs/me.JPG" class="responsive" alt="My Image" /></div>
         </div>
         <div class="main-bio-container">
             <h5 class="generic-subtitle">◤ Biography</h5>
@@ -243,7 +298,8 @@
             
             <p style="color:rgb(250, 58, 0)"> [Feb 2023] I will join UC Berkeley EECS as a Computer Science PhD student starting Fall 2023.
             </p>
-
+            
+            
         </div>
         
         <div class="main-research-container">
